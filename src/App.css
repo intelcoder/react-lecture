@@ -33,12 +33,16 @@
   background-image: url('./astronomy.jpg');
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .jedis {
   height: 200px;
-  width: 100%;
+  width: 80%;
   display: flex;
   position: absolute;
   bottom: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
