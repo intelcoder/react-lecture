@@ -1,15 +1,23 @@
-.Jedi {
+.light {
   background: white;
   width: 100%;
   position: relative;
  
 }
 
-.Jedi .hp {
+.light .hp {
   width: 100%;
   height: 8px;
   position: absolute;
   bottom: 0;
   background: red;
 
+}
+
+.dark{
+  background: black;
+  width: 100%;
+  color: grey;
+  font-weight: bold;
+  position: relative;
 }

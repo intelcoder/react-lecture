@@ -11,8 +11,8 @@ class App extends Component {
       <div className="App">
         <div className="universe">
           <div className="jedis">
-        
             <Jedi
+              type="light"
               name='Luke Skywalker'
               title='Jedi Master'
               jediInfo={{
@@ -20,13 +20,14 @@ class App extends Component {
               }}
               hp={100}
             />
-            <DarkJedi
+            <Jedi
+              type="dark"
               name='Darth Vader'
               title='Dark Jedi'
               jediInfo={{
                 age: 300
               }}
-              hp={250}
+              hp={100}
             />
           </div>
           

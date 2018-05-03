@@ -4,9 +4,9 @@ import './Jedi.css'
 
 class Jedi extends Component {
   render() {
-    const { name, title, jediInfo, hp } = this.props
+    const { type = 'white', name, title, jediInfo, hp } = this.props
     return (
-      <div className="Jedi">
+      <div className={ type }>
           <h1>{name}</h1>
           <h2>{title}</h2>
           <h4>age: {jediInfo.age}</h4>
