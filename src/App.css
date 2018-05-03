@@ -26,17 +26,27 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
+@keyframes background-slider {
+  0% { background-position-x: 0%;}
+  50% {background-position-x: 2000%;} 
+  100% {background-position-x: 0%;}
+}
 .universe {
   height: 100vh;
   width: 100%;
   background-image: url('./astronomy.jpg');
   background-size: cover;
+  background-repeat: repeat;
+  background-attachment: scroll;
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
+  animation: background-slider 500s linear  infinite forwards;
+  transform:  translateZ(0);
+
 }
 
 .jedis {

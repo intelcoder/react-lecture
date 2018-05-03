@@ -18,6 +18,7 @@ class App extends Component {
               jediInfo={{
                 age: 200
               }}
+              hp={100}
             />
             <DarkJedi
               name='Darth Vader'
@@ -25,6 +26,7 @@ class App extends Component {
               jediInfo={{
                 age: 300
               }}
+              hp={250}
             />
           </div>
           
