@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 
 
 import Jedi from './Jedi'
@@ -12,9 +11,23 @@ class App extends Component {
       <div className="App">
         <div className="universe">
           <div className="jedis">
-            <Jedi />
-            <DarkJedi />
+        
+            <Jedi
+              name='Luke Skywalker'
+              title='Jedi Master'
+              jediInfo={{
+                age: 200
+              }}
+            />
+            <DarkJedi
+              name='Darth Vader'
+              title='Dark Jedi'
+              jediInfo={{
+                age: 300
+              }}
+            />
           </div>
+          
         </div>
       </div>
     );
